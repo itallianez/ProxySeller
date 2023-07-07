@@ -21,6 +21,8 @@ const Index = ({ users }) => {
 	const [search, setSearch] = useState("");
 	const [userList, setUserList] = useState(users);
 
+	const bg = require("../public/images/2.jpg");
+
 	const sortUsers = value => {
 		if (value === "asc") {
 			return [...users].sort((a, b) => a.username.localeCompare(b.name));
@@ -44,7 +46,7 @@ const Index = ({ users }) => {
 	}, [search, sortedUsers]);
 
 	return (
-		<PageContainer infoBg={"/images/2.jpg"} infoTitle="User's list">
+		<PageContainer infoBg={bg.default} infoTitle="User's list">
 			<div className="section">
 				<h2 className="textCenter mb-40">Users</h2>
 				<div className="searchWrapper mb-40">

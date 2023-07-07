@@ -21,7 +21,7 @@ const PageContainer = ({
 				<meta name="robots" content="noindex, nofollow" />
 				<meta name="description" content={description || seoData.description} />
 				<meta name="keywords" content={keywords || seoData.keywords} />
-				<link rel="icon" href="/images/favicon.png" sizes="any" />
+				<link rel="icon" href="./images/favicon.png" sizes="any" />
 				<link
 					href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
 					rel="stylesheet"

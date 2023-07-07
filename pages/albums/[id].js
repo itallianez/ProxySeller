@@ -4,7 +4,7 @@ import PageContainer from "../../components/global/pageContainer";
 
 const AlbumPage = ({ albums }) => {
 	return (
-		<PageContainer infoBg={"/images/2.jpg"} infoTitle="Albums page">
+		<PageContainer infoBg={"./images/2.jpg"} infoTitle="Albums page">
 			<div className="section">
 				<h2 className="textCenter mb-40">Albums page</h2>
 				<div className="listWrapper">
