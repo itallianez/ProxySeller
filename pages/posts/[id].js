@@ -3,9 +3,8 @@ import PageContainer from "../../components/global/pageContainer";
 import PostCard from "../../components/postCard";
 
 const PostPage = ({ posts }) => {
-	const bg = require("../../public/images/2.jpg");
 	return (
-		<PageContainer infoBg={bg.default} infoTitle="Posts Page">
+		<PageContainer infoBg="./images/2.jpg" infoTitle="Posts Page">
 			<div className="section">
 				<h2 className="textCenter mb-40">Posts page</h2>
 				<div className="listWrapper">
