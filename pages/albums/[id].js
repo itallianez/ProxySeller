@@ -23,7 +23,7 @@ export async function getStaticPaths() {
 	const paths = await getIdList("album");
 	return {
 		paths,
-		fallback: true,
+		fallback: false,
 	};
 }
 

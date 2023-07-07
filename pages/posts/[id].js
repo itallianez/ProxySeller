@@ -19,7 +19,18 @@ const PostPage = ({ posts }) => {
 export default PostPage;
 
 export async function getStaticPaths() {
-	const paths = await getIdList("post");
+	const paths = await fetch("https://jsonplaceholder.typicode.com/posts")
+		.then(res => res.json())
+		.then(data =>
+			data.map(item => {
+				return {
+					params: {
+						id: item.id.toString(),
+					},
+				};
+			})
+		);
+	console.log("paths: ", paths);
 	return {
 		paths,
 		fallback: true,
