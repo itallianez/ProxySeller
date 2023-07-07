@@ -49,7 +49,7 @@ export const getIdList = async resource => {
 	}
 	try {
 		const response = await fetch(url).then(res => res.json());
-		const idList = response.map(item => {
+		const idList = response?.map(item => {
 			return {
 				params: {
 					id: item.id.toString(),
