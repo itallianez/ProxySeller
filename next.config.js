@@ -1,5 +1,3 @@
-const withImages = require("next-images");
+const nextConfig = {};
 
-module.exports = withImages({
-	esModule: true,
-});
+module.exports = nextConfig;
