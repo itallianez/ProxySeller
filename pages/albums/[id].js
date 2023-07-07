@@ -1,4 +1,4 @@
-import { getAlbumsByUserId } from "../../api";
+import { getAlbumsByUserId, getIdList } from "../../api";
 import AlbumCard from "../../components/albumCard";
 import PageContainer from "../../components/global/pageContainer";
 
@@ -19,7 +19,15 @@ const AlbumPage = ({ albums }) => {
 
 export default AlbumPage;
 
-export async function getServerSideProps({ params }) {
+export async function getStaticPaths() {
+	const paths = await getIdList("album");
+	return {
+		paths,
+		fallback: true,
+	};
+}
+
+export async function getStaticProps({ params }) {
 	const albums = await getAlbumsByUserId(params.id);
 	return {
 		props: { albums },

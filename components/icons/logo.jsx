@@ -1,11 +1,6 @@
 const Logo = () => {
 	return (
-		<svg
-			width="213.434375"
-			height="213.434375"
-			viewBox="0 0 312.5 312.5"
-			class="css-1j8o68f"
-		>
+		<svg width="213.434375" height="213.434375" viewBox="0 0 312.5 312.5">
 			<defs id="SvgjsDefs1243"></defs>
 			<g
 				id="SvgjsG1244"

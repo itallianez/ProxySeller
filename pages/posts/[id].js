@@ -1,4 +1,4 @@
-import { getPostsByUserId } from "../../api";
+import { getIdList, getPostsByUserId } from "../../api";
 import PageContainer from "../../components/global/pageContainer";
 import PostCard from "../../components/postCard";
 
@@ -18,7 +18,15 @@ const PostPage = ({ posts }) => {
 };
 export default PostPage;
 
-export async function getServerSideProps({ params }) {
+export async function getStaticPaths() {
+	const paths = await getIdList("post");
+	return {
+		paths,
+		fallback: true,
+	};
+}
+
+export async function getStaticProps({ params }) {
 	const posts = await getPostsByUserId(params.id);
 	return {
 		props: { posts },
