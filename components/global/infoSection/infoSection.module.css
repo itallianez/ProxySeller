@@ -1,0 +1,14 @@
+.wrapper {
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+.titleWrapper {
+	min-height: 350px;
+	padding: 40px 16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(0, 153, 204, 0.4);
+}

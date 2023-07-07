@@ -1,0 +1,7 @@
+.select {
+	font-family: "Ubuntu", sans-serif;
+	font-size: 18px;
+	border: 1px solid rgb(0, 153, 204);
+	border-radius: 10px;
+	padding: 10px 12px;
+}

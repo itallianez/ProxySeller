@@ -1,0 +1,35 @@
+.postWrapper {
+	background-color: #fff;
+	border-radius: 20px;
+	overflow: hidden;
+	box-shadow: 1px 1px 10px rgba(0, 153, 204, 0.2);
+}
+
+.postImg {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 0;
+	padding-bottom: 50%;
+}
+
+.postImg img {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.postInfo {
+	padding: 15px;
+}
+
+.title {
+	margin-bottom: 15px;
+}
+
+.description {
+}

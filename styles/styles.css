@@ -1,0 +1,110 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Ubuntu", sans-serif;
+	font-size: 14px;
+	line-height: 1.25em;
+}
+
+h1 {
+	font-size: 72px;
+	line-height: 1.25em;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 48px;
+	line-height: 1.25em;
+	font-weight: 500;
+}
+
+h3 {
+	font-size: 26px;
+	line-height: 1.25em;
+}
+
+.container {
+	max-width: 1202px;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+.section {
+	padding: 60px 0;
+}
+
+.textCenter {
+	text-align: center;
+}
+
+.mb-40 {
+	margin-bottom: 40px;
+}
+
+.listWrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+}
+
+.listWrapper > div {
+	width: calc(33.33% - 14px);
+}
+
+.searchWrapper {
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+.errorPageWrapper {
+	padding: 150px 0;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+@media (max-width: 1024px) {
+	h1 {
+		font-size: 56px;
+	}
+
+	h2 {
+		font-size: 32px;
+	}
+
+	h3 {
+		font-size: 22px;
+	}
+}
+
+@media (max-width: 767px) {
+	h1 {
+		font-size: 42px;
+	}
+
+	h2 {
+		font-size: 26px;
+	}
+
+	h3 {
+		font-size: 16px;
+	}
+	.listWrapper > div {
+		width: calc(50% - 14px);
+	}
+}
+
+@media (max-width: 575px) {
+	.listWrapper > div {
+		width: 100%;
+	}
+}
