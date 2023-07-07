@@ -6,7 +6,7 @@ const PostCard = ({ post }) => {
 		<div className={styles.postWrapper}>
 			<Link href="#">
 				<a rel="nofollow" className={styles.postImg}>
-					<img src="/images/2.jpg" alt={post.title} />
+					<img src="./images/2.jpg" alt={post.title} />
 				</a>
 			</Link>
 			<div className={styles.postInfo}>
