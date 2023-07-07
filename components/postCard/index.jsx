@@ -1,13 +1,12 @@
 import Link from "next/dist/client/link";
 import styles from "./postCard.module.css";
-import bg from "../../public/images/2.jpg";
 
 const PostCard = ({ post }) => {
 	return (
 		<div className={styles.postWrapper}>
 			<Link href="#">
 				<a rel="nofollow" className={styles.postImg}>
-					<img src={bg} alt={post.title} />
+					<img src="/images/2.jpg" alt={post.title} />
 				</a>
 			</Link>
 			<div className={styles.postInfo}>
