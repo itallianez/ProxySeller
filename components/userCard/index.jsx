@@ -1,24 +1,20 @@
 import LinkBtn from "../UI/linkBtn";
-import avatar from "../../public/images/1.png";
-import phone from "../../public/images/phone.png";
-import email from "../../public/images/email.png";
-import website from "../../public/images/website.png";
 import styles from "./userCard.module.css";
 
 const UserCard = ({ user }) => {
 	const userContacts = [
 		{
-			icon: email,
+			icon: "/images/email.png",
 			info: user.email,
 			alt: `email of ${user.name}`,
 		},
 		{
-			icon: phone,
+			icon: "/images/phone.png",
 			info: user.phone,
 			alt: `phone of ${user.name}`,
 		},
 		{
-			icon: website,
+			icon: "/images/website.png",
 			info: user.website,
 			alt: `website of ${user.name}`,
 		},
@@ -29,7 +25,7 @@ const UserCard = ({ user }) => {
 			<div className={styles.avatarWrapper}>
 				<img
 					className={styles.avatar}
-					src={avatar}
+					src="/images/1.png"
 					alt={`Avatar by ${user.name}`}
 				/>
 			</div>
