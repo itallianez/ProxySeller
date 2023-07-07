@@ -20,10 +20,21 @@ const AlbumPage = ({ albums }) => {
 export default AlbumPage;
 
 export async function getStaticPaths() {
-	const paths = await getIdList("album");
+	const paths = await fetch("https://jsonplaceholder.typicode.com/albums")
+		.then(res => res.json())
+		.then(data =>
+			data.map(item => {
+				return {
+					params: {
+						id: item.id.toString(),
+					},
+				};
+			})
+		);
+
 	return {
 		paths,
-		fallback: false,
+		fallback: true,
 	};
 }
 
