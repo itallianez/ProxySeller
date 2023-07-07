@@ -4,6 +4,7 @@ import PageContainer from "../components/global/pageContainer";
 import UserCard from "../components/userCard";
 import Input from "../components/UI/input";
 import Select from "../components/UI/select";
+import bg from "../public/images/2.jpg";
 
 const selectList = [
 	{
@@ -44,7 +45,7 @@ const Index = ({ users }) => {
 	}, [search, sortedUsers]);
 
 	return (
-		<PageContainer infoBg={"/images/2.jpg"} infoTitle="User's list">
+		<PageContainer infoBg={bg} infoTitle="User's list">
 			<div className="section">
 				<h2 className="textCenter mb-40">Users</h2>
 				<div className="searchWrapper mb-40">

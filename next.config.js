@@ -1,6 +1,5 @@
-const isProd = process.env.NODE_ENV === "production";
+const withImages = require("next-images");
 
-module.exports = {
-	basePath: isProd ? "/ProxySeller" : "",
-	assetPrefix: isProd ? "https://itallianez.github.io/ProxySeller/" : "",
-};
+module.exports = withImages({
+	esModule: true,
+});
