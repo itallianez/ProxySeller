@@ -5,7 +5,7 @@ const AlbumCard = ({ album }) => {
 	return (
 		<div
 			className={styles.albumWrapper}
-			style={{ backgroundImage: "url(./images/2.jpg)" }}
+			style={{ backgroundImage: "url('/images/2.jpg')" }}
 		>
 			<Link href="#">
 				<a rel="nofollow" className={styles.link}>
