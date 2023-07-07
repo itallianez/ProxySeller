@@ -4,17 +4,17 @@ import styles from "./userCard.module.css";
 const UserCard = ({ user }) => {
 	const userContacts = [
 		{
-			icon: "/images/email.png",
+			icon: "./images/email.png",
 			info: user.email,
 			alt: `email of ${user.name}`,
 		},
 		{
-			icon: "/images/phone.png",
+			icon: "./images/phone.png",
 			info: user.phone,
 			alt: `phone of ${user.name}`,
 		},
 		{
-			icon: "/images/website.png",
+			icon: "./images/website.png",
 			info: user.website,
 			alt: `website of ${user.name}`,
 		},
@@ -25,7 +25,7 @@ const UserCard = ({ user }) => {
 			<div className={styles.avatarWrapper}>
 				<img
 					className={styles.avatar}
-					src="/images/1.png"
+					src="./images/1.png"
 					alt={`Avatar by ${user.name}`}
 				/>
 			</div>
